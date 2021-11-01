@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.actions.server" id="create_time_report_for_current_week">
+            <field name="name">Create Time Report For Current Week</field>
+            <field name="model_id" ref="hr.model_hr_employee"/>
+            <field name="state">code</field>
+            <field name="code">
+for employee in records:
+    if not employee.should_time_report or not employee.user_id:
+        continue
+    employee.create_time_sheet_for_current_week()
+            </field>
+        </record>
+
+        <record id="time_reports_all_employes_mondays" model="ir.cron">
+            <field name="name">Create time sheets for company</field>
+            <field name="model_id" ref="model_hr_employee"/>
+            <field name="state">code</field>
+            <field name="code">model.create_time_sheet_for_current_week_all_employes()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">weeks</field>
+            <field name="numbercall">-1</field>
+            <field eval="False" name="doall"/>
+        </record>
+        
+        
+</odoo>
