@@ -26,6 +26,9 @@ import logging
 _logger = logging.getLogger(__name__)
 
 
+class hr_employee(models.Model):
+    _inherit = 'hr.employee.public'
+    should_time_report = fields.Boolean('Should Time Report', default=False)
 
 class hr_employee(models.Model):
     _inherit = 'hr.employee'
