@@ -1,2 +1,2 @@
 # odoo-time-report
-Modules add functionality to time report modules
+time_report_automation: Is a module that adds a cron job that runs every weeks which creates time reports for all employees that should time report.

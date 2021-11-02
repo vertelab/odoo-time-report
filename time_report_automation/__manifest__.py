@@ -19,7 +19,7 @@
 #
 ##############################################################################
 {
-    'name': 'Time Teport Automation',
+    'name': 'Time Report Automation',
     'category': 'Payroll',
     'author': 'Vertel AB',
     'depends': ['hr_timesheet'],
