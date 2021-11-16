@@ -22,7 +22,7 @@
     'name': 'Time Report Automation',
     'category': 'Payroll',
     'author': 'Vertel AB',
-    'depends': ['hr_timesheet'],
+    'depends': ['hr_timesheet','hr_timesheet_sheet'],
     'version': '1.0',
     'description': """
     Adds a cron job that creates time sheets for all employees that have the field shoud_time_report set to true.
