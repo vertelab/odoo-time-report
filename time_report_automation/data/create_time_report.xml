@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+<!--
     <record model="ir.actions.server" id="create_time_report_for_current_week">
             <field name="name">Create Time Report For Current Week</field>
             <field name="model_id" ref="hr.model_hr_employee"/>
@@ -11,6 +12,7 @@ for employee in records:
     employee.create_time_sheet_for_current_week()
             </field>
         </record>
+-->
 
         <record id="time_reports_all_employes_mondays" model="ir.cron">
             <field name="name">Create time sheets for company</field>

@@ -29,10 +29,6 @@ _logger = logging.getLogger(__name__)
 
 
 class hr_employee(models.Model):
-    _inherit = 'hr.employee.public'
-    should_time_report = fields.Boolean('Should Time Report', default=False)
-
-class hr_employee(models.Model):
     _inherit = 'hr.employee'
 
     should_time_report = fields.Boolean('Should Time Report', default=False)
@@ -71,3 +67,6 @@ class hr_employee(models.Model):
             except Exception:
                 _logger.exception(f"Create Time Report Exception For Employee {record.name}: ")
                 
+class hr_employee(models.Model):
+    _inherit = 'hr.employee.public'
+    should_time_report = fields.Boolean('Should Time Report', default=False)
