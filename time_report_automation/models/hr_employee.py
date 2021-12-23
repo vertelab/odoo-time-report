@@ -55,12 +55,14 @@ class hr_employee(models.Model):
                         
                     rec = record.env['hr_timesheet.sheet'].search([('employee_id', '=', record.id), ('date_start', '=', current_weeks_monday), ('date_end','=',current_weeks_friday)])
                     if not rec:
-                        record.env['hr_timesheet.sheet'].create(
+                        time_sheet = record.env['hr_timesheet.sheet'].create(
                         {
                         'employee_id':record.id,
                         'date_start':current_weeks_monday,
                         'date_end':current_weeks_friday
                         })
+                        time_sheet._compute_line_ids()
+                        time_sheet._compute_timesheet_ids()
      
 
                     number_of_weeks_iteration+=1
