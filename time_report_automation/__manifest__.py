@@ -30,7 +30,7 @@
     """,
 
     'auto_install': False,
-    'website': 'http://www.vertel.se',
+    'website': 'https://vertel.se/apps/odoo-time-report/time_report_automation',
     'data':[
         'data/create_time_report.xml',
         'views/hr_employee.xml',
