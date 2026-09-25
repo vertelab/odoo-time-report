@@ -20,14 +20,24 @@
 ##############################################################################
 {
     'name': 'Time Report Automation',
+    'summary': "Automates time report generation.",
     'category': 'Payroll',
     'author': 'Vertel AB',
     'depends': ['hr_timesheet','hr_timesheet_sheet'],
-    'version': '1.0',
+    'version': '18.0.1.0.0',
     'license': 'AGPL-3',
-    'description': """
+    'description': '''
+Time Report Automation
+======================
+
     Adds a cron job that creates time sheets for all employees that have the field shoud_time_report set to true.
-    """,
+
+    Features:
+
+        - Automation: Scheduled jobs: Create time sheets for company.
+        - UI Integration: Extends 2 view(s) in the Odoo interface.
+        - Extends Odoo: Builds on hr.employee, hr.employee.public.
+    ''',
 
     'auto_install': False,
     'website': 'https://vertel.se/apps/odoo-time-report/time_report_automation',
