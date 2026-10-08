@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    Odoo, Open Source Enterprise Management Solution, third party addon
-#    Copyright (C) 2014- Vertel AB (<http://vertel.se>).
+#    Copyright (C) 2014- Vertel Sverige AB (<http://vertel.se>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -22,7 +22,7 @@
     'name': 'Time Report Automation',
     'summary': "Automates time report generation.",
     'category': 'Payroll',
-    'author': 'Vertel AB',
+    'author': 'Vertel Sverige AB',
     'depends': ['hr_timesheet','hr_timesheet_sheet'],
     'version': '18.0.1.0.0',
     'license': 'AGPL-3',
